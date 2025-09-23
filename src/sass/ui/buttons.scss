@@ -8,6 +8,23 @@
     font-size: 20px;
 }
 
+.send-button {
+    @include button;
+    width: 220px;
+    height: 40px;
+    font-size: 16px;
+
+    &:focus {
+        outline: 1px solid $ceramic;
+        border: none;
+    }
+
+    &:disabled {
+        border: 1px solid $ui-disabled;
+        color: $ui-disabled;
+    }
+}
+
 
 @media screen and (min-width: 1200px) {
     .btn-default {
@@ -21,6 +38,23 @@
             background: rgba(217, 217, 217, 0.1);
             color: $dark;
             border: none;
+        }
+    }
+
+    .send-button {
+        @include button;
+        width: 220px;
+        height: 40px;
+        font-size: 16px;
+
+        &:active {
+            outline: 1px solid $ceramic;
+            border: none;
+        }
+
+        &:hover {
+            color: $ceramic;
+            border: 1px solid $ceramic;
         }
     }
 }
