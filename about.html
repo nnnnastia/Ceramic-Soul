@@ -126,6 +126,17 @@
         </div>
     </section>
 
+    <section class="findus"></section>
+    <div class="container">
+        <h2 class="title-h2">find us</h2>
+        <div class="findus__wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6046.954494464828!2d-73.9490887!3d40.729523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2593c58f8777d%3A0xe2215ac687bd7249!2sCLAY%20SPACE%20Ceramic%20Center!5e0!3m2!1suk!2sua!4v1767029539398!5m2!1suk!2sua"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
     <footer class="footer footer_spaced">
         <div class="container">
             <div class="footer__wrapper">
@@ -135,10 +146,13 @@
                         Keep up to date with news and promotions
                     </div>
                     <form action="#" class="footer__form">
-                        <input class="footer__input" type="email" placeholder="Enter your e-mail" required>
+                        <input class="footer__input" type="email" name="email" id="footer__email"
+                            placeholder="Enter your e-mail" required>
+                        <div class="email-error-message"></div>
                         <label class="footer__check-block" for="footer__checkbox">
                             <input required class="footer__checkbox" type="checkbox" id="footer__checkbox">
                             I agree with the <a href="#">terms</a></label>
+                        <div class="check-error-message"></div>
                         <button class="submit-button footer__form-btn">submit</button>
                     </form>
                 </div>

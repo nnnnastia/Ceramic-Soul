@@ -1,6 +1,16 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .footer {
+
+    .just-validate-error-field {
+        border-bottom: 1px solid $ui-error;
+
+
+        &::placeholder {
+            color: $ui-error;
+        }
+    }
+
     padding: 50px 0;
     background-color: $dark;
 
@@ -46,6 +56,7 @@
         box-shadow: none;
         font-style: normal;
         line-height: normal;
+        outline: none;
 
         &::placeholder {
             font-weight: 400;
